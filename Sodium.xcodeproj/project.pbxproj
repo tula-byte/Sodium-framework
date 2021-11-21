@@ -129,7 +129,6 @@
 		36A8DD9C1D292B9A00B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DCAB1D28D70D00B97D7E /* Sodium.framework */; };
 		36A8DDAE1D29409800B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD461D28DA5A00B97D7E /* Sodium.framework */; };
 		36A8DDB41D2940A300B97D7E /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DD991D292B9A00B97D7E /* SodiumTests.swift */; };
-		DCD6BA10274A1A79000928D1 /* simulator-no-arm.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DCD6BA0F274A1A79000928D1 /* simulator-no-arm.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,7 +217,6 @@
 		36A8DD9B1D292B9A00B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A8DDA91D29409800B97D7E /* SodiumTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SodiumTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8DDAD1D29409800B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD6BA0F274A1A79000928D1 /* simulator-no-arm.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "simulator-no-arm.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +258,6 @@
 		36A8DCA11D28D70D00B97D7E = {
 			isa = PBXGroup;
 			children = (
-				DCD6BA0F274A1A79000928D1 /* simulator-no-arm.xcconfig */,
 				36A8DCAC1D28D70D00B97D7E /* Products */,
 				36A8DCAD1D28D70D00B97D7E /* Sodium */,
 				36A8DD981D292B9A00B97D7E /* SodiumTests */,
@@ -649,7 +646,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD6BA10274A1A79000928D1 /* simulator-no-arm.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,7 +856,6 @@
 		};
 		36A8DD4C1D28DA5A00B97D7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD6BA0F274A1A79000928D1 /* simulator-no-arm.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -892,7 +887,6 @@
 		};
 		36A8DD4D1D28DA5A00B97D7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD6BA0F274A1A79000928D1 /* simulator-no-arm.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
