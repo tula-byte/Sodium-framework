@@ -1,0 +1,21 @@
+//
+//  simulator-no-arm.xcconfig
+//  Sodium-iOS
+//
+//  Created by Arjun Singh on 21/11/21.
+//  Copyright © 2021 Zhuhao Wang. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Operating under the precondition that Carthage will be flagged `--platform iOS`…
+PLATFORM_NAME[sdk=iphonesimulator*] = iphonesimulator
+PLATFORM_NAME[sdk=iphoneos*] = iphonesimulator
+
+// overwrite SUPPORTED_PLATFORMS into emptiness — exceptions being the modules and
+// corresponding values that we will list (mostly, multi-platform, single scheme modules —
+// see http://promisekit.org/news/2016/08/Multiplatform-Single-Scheme-Xcode-Projects/ for
+// more info…)
+SUPPORTED_PLATFORMS__PRODUCT_MODULE_NAME_PrettyColors = iphonesimulator
+SUPPORTED_PLATFORMS = $(SUPPORTED_PLATFORMS__PRODUCT_MODULE_NAME_$(PRODUCT_MODULE_NAME))
